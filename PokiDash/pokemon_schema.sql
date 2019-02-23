@@ -43,8 +43,8 @@ CREATE TABLE PlayerPokemons (
     PPID INT NOT NULL AUTO_INCREMENT,
     PlayerID INT,
     PokedexID INT,
-    Ability VARCHAR(255),
     Item VARCHAR(255),
+    Ability VARCHAR(255),
     PRIMARY KEY(PPID),
     FOREIGN KEY (PokedexID) REFERENCES Pokemons(PokedexID),
     FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID)
@@ -65,11 +65,11 @@ CREATE TABLE TeamPokemons (
 );
 
 CREATE TABLE Registration (
-    RegisterID INT NOT NULL,
+    RegisterID INT NOT NULL AUTO_INCREMENT,
     PlayerID INT NOT NULL,
     TournamentID INT NOT NULL,
     TeamID INT NOT NULL,
-    Division INT NOT NULL,
+    Division VARCHAR(255) NOT NULL,
     Result INT NOT NULL,
     PRIMARY KEY(RegisterID),
     FOREIGN KEY (PlayerID) REFERENCES Players(PlayerID),
