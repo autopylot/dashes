@@ -4,6 +4,7 @@ Interactive dashboard built by aggregating data from PokeAPI and VGC tournament 
 
 ## Getting Started
 
+![Dashboard](docs/dash-screen.png)
 ![Database Model](docs/pokemon_diagram.png)
 
 ### Prerequisites
