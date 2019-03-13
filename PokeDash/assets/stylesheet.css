@@ -1,0 +1,129 @@
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+.dash-container {
+    margin: 40px auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 4fr 6fr;
+    grid-template-rows: 2fr 6fr;
+    grid-template-areas: 
+    "sprite info table"
+    "hbar radar table";
+}
+
+.pokemon-info-container {
+  padding: 10px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 50px 1fr;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.pokemon-info--searchbar {
+  padding: 10px;
+  grid-column: 1/3;
+}
+
+.pokemon-info--typing {
+  display: grid;
+  grid-template-columns: 
+}
+
+.pokemon-sprite {
+  justify-self: center;
+  border: 4px solid #30A7D7;
+  border-radius: 10px;
+  grid-area: sprite;
+  padding: 5px;
+  width: 200px;
+  height: 200px;
+}
+
+.pokemon-stats-hbar {
+  grid-area: hbar;
+}
+
+.pokemon-stats-radar {
+  grid-area: radar;
+}
+
+.pokemon-table{
+  grid-area: table;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 3fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "item ability"
+    "moves moves";
+}
+
+.pokemon-table--moves {
+  grid-area: moves;
+}
+  
+.pokemon-table--item {
+  grid-area: item;
+}
+  
+.pokemon-table--ability {
+  grid-area: ability;  
+}
+
+span.type,.type th{
+  display: block;
+  width: 50px;
+  height: 18px;
+  transform: scale(0.75);
+  vertical-align: middle;
+}
+
+span.type{
+  display: none;
+  margin-right:14px !important;
+  margin-left:2px;
+  text-transform: uppercase;
+  /* font-family: Pokemon; */
+  letter-spacing: 1px;
+  position:relative;
+  top:0px;
+  font-size:14px !important;
+
+  padding: 1px;
+  padding-left: 7px;
+  padding-right: 5px;
+  box-shadow: 0px 0px 0px 1px black;
+  border: 1px solid white;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.7), 1px -1px 0 rgba(0, 0, 0, 0.7), -1px 1px 0 rgba(0, 0, 0, 0.7), 1px 1px 0 rgba(0, 0, 0, 0.7);
+}
+
+span.type.fighting,.type.fighting th{display:inline !important;background: #e06752;}
+span.type.fire,.type.fire th{display:inline !important;background: #ff5129;}
+span.type.flying,.type.flying th{display:inline !important;background: #7ab7ff;}
+span.type.grass,.type.grass th{display:inline !important;background: #8fed66;}
+span.type.water,.type.water th{display:inline !important;background: #3db7ff;}
+span.type.bug,.type.bug th{display:inline !important;background: #cbde29;}
+span.type.electric,.type.electric th{display:inline !important;background: #ffed3d;}
+span.type.ghost,.type.ghost th{display:inline !important;background: #7a7adf;}
+span.type.ground,.type.ground th{display:inline !important;background: #f6dd66;}
+span.type.poison,.type.poison th{display:inline !important;background: #cb66b7;}
+span.type.rock,.type.rock th{display:inline !important;background: #ddcb7a;}
+span.type.dragon,.type.dragon th{display:inline !important;background: #8d79fd;}
+span.type.fairy,.type.fairy th{display:inline !important;background: #ffcbff;}
+span.type.ice,.type.ice th{display:inline !important;background: #8ef7ff;}
+span.type.psychic,.type.psychic th{display:inline !important;background: #ff65b6;}
+span.type.steel,.type.steel  th{display:inline !important;background: #cbcbdf;}
+span.type.dark,.type.dark th{display:inline !important;background: #8e6651;}
+span.type.normal,.type.normal  th{display:inline !important;background: #dedecb;}
