@@ -2,11 +2,10 @@
 
 Interactive dashboard built by aggregating data from PokeAPI and VGC tournament results. The dashboard shows statistics about Type usage, Pokemon usage, and Move usage in VGC tournaments. Learn what to expect and strategize Pokemon builds for your team.
 
-## Getting Started
-
 ![Dashboard](docs/dash-screen.png)
 ![Database Model](docs/pokemon_diagram.png)
 
+## Getting Started
 ### Prerequisites
 
 Conda or pip install the following libraries:
